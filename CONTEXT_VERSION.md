@@ -1,15 +1,18 @@
 # Context Version
 
-CONTEXT_VERSION: 2026-05-08T20:35+02:00
-STATUS: public selective mirror draft
+CONTEXT_VERSION: 2026-05-08T23:58+02:00
+MIRROR_VERSION: v0.2
+STATUS: public selective mirror published, v0.2 autosufficient packet
 SOURCE: local private project memory, filtered by Codex
+SOURCE_OF_TRUTH: private local project memory
 
 ## Ultimo aggiornamento
 
-- Testato repo privato con token: non funziona in modo affidabile per Gemini, Qwen, DeepSeek e Mistral.
-- Testato pacchetto embedded: funziona, ma richiede copia/incolla o upload manuale.
-- Proposta attuale: mirror pubblico selettivo con pochi file markdown puliti, senza dati sensibili.
-- Terzo test recepito: aggiunti `PROTOCOL_RATIONALE.md` e `AI_HANDOFF_TEMPLATE.md` per chiarire che il metodo e un protocollo low-tech umano-centrico, non una piattaforma multi-agent automatica.
+- Pubblicato il mirror pubblico selettivo su GitHub.
+- Testato `AI_PACKET_CURRENT.md` con piu AI cloud.
+- Esito test: Qwen, DeepSeek e Mistral hanno letto il pacchetto in modo utile; Gemini ha fallito per problema tecnico di accesso/DNS nella sessione testata.
+- Decisione operativa: procedere con condizioni, rendendo `AI_PACKET_CURRENT.md` piu autosufficiente e trattando il mirror come snapshot pubblico, non come archivio parallelo vivo.
+- v0.2: aggiunti `MIRROR_LAST_SYNC`, `SOURCE_OF_TRUTH`, `TASK_SCOPE`, `OMITTED_CONTEXT`, glossario minimo e regola `[CONTESTO POTENZIALMENTE OBSOLETO]`.
 
 ## Progetto in una frase
 
@@ -27,8 +30,11 @@ Luca usa piu AI per avere prospettive diverse. Il problema da risolvere e ridurr
 
 Il mirror pubblico selettivo e un test tecnico: deve permettere alle AI cloud di leggere un contesto comune via URL pubblico, senza accedere alla memoria privata del progetto.
 
+La regola centrale e: memoria privata = fonte di verita; mirror pubblico = esportazione filtrata e temporanea.
+
 ## AI Log
 
 | Data | AI | Azione | Note |
 |------|----|--------|------|
 | 2026-05-08T20:10+02:00 | Codex | creato | Prima versione pubblicabile del contesto mirror. |
+| 2026-05-08T23:58+02:00 | Codex | aggiornato | v0.2 dopo test pubblico: pacchetto principale reso piu autosufficiente. |
